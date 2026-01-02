@@ -2,5 +2,8 @@
 
 public class Lift
 {
-    
+    public string Doors()
+    {
+        return "Closed";
+    }
 }
