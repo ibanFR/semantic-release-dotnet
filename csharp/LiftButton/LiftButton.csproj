@@ -6,6 +6,9 @@
         <Nullable>enable</Nullable>
         <PackageId>IbanFR.SemanticRelease.LiftButton</PackageId>
         <Version>1.0.0</Version>
+        <Authors>Iván Fernández</Authors>
+        <Company>IbanFR</Company>
+        <Description>C# implementation of the LiftButton software</Description>
     </PropertyGroup>
 
 </Project>
