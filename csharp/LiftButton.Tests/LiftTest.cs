@@ -12,7 +12,7 @@ public class LiftTests
     [Test]
     public void DoorsShouldBeClosedWhenLiftIsCreated()
     {
-        Lift lift = new Lift();
+        var lift = new Lift();
         Assert.That(lift.Doors(), Is.EqualTo("Closed"));
     }
 
@@ -20,10 +20,12 @@ public class LiftTests
     public void ShouldSwitchLightsOnWhenButtonIsPressedAndDoorsAreClosed()
     {
         //Arrange
-        Lift lift = new Lift();
+        var lift = new Lift();
         //Act
         lift.PressButton();
         //Assert
         Assert.That(lift.Lights(), Is.EqualTo("On"));
     }
+    
+    
 }
