@@ -11,7 +11,7 @@ on:
       - "csharp/**"
 env:
   SOLUTION_PATH: 'csharp/SemanticRelease.sln'
-  PROJECT_PATH: 'csharp/LiftButton/LiftButton.csproj'
+  PROJECT_PATH: 'csharp/LiftButton'
   PACKAGE_OUTPUT_DIRECTORY: ${{ github.workspace }}/output
 
 jobs:
