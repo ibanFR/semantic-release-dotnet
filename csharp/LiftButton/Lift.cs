@@ -3,16 +3,18 @@
 public class Lift
 {
     private string _lights;
+    private string _doors;
 
     public Lift()
     {
         _lights = "Off";
+        _doors = "Closed";
     }
 
 
     public string Doors()
     {
-        return "Closed";
+        return _doors;
     }
 
     public void PressButton()
@@ -23,5 +25,10 @@ public class Lift
     public string Lights()
     {
         return _lights;
+    }
+
+    public void Arrive()
+    {
+        _doors = "Open";
     }
 }

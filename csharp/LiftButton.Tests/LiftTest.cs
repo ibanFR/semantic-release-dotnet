@@ -5,7 +5,7 @@ public class LiftTests
     //TEST LIST
     //[X] - doors should be CLOSED when Lift is created
     //[X] - should switch lights ON when button is pressed and doors are CLOSED
-    //[] - should OPEN the lift doors when lift arrives
+    //[X] - should OPEN the lift doors when lift arrives
     //[] - should switch OFF the lights when lift arrives
     //[] - lights should be OFF when button is pressed and doors are OPEN
 
@@ -25,6 +25,17 @@ public class LiftTests
         lift.PressButton();
         //Assert
         Assert.That(lift.Lights(), Is.EqualTo("On"));
+    }
+    
+    [Test]
+    public void ShouldOpenTheLiftDoorsWhenLiftArrives()
+    {
+        //Arrange
+        var lift = new Lift();
+        //Act
+        lift.Arrive();
+        //Assert
+        Assert.That(lift.Doors(), Is.EqualTo("Open"));
     }
     
     
